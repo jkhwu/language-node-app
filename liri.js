@@ -1,8 +1,10 @@
 require("dotenv").config();
-let keys = require('./keys.js')
-let Twitter = require('twitter');
-let Spotify = require('node-spotify-api');
-// let request = require('request');
+const keys = require('./keys.js')
+const Twitter = require('twitter');
+const Spotify = require('node-spotify-api');
+const request = require('request');
+const fs = require("fs")
+
 let spotify = new Spotify(keys.spotify);
 let client = new Twitter(keys.twitter);
 let [node, path, command, title] = process.argv;
@@ -18,13 +20,13 @@ let myTweets = () => {
 }
 
 let spotifyThis = () => {
-    console.log('OK, looking up the song: "' + title + '" ...');
-    spotify.search({ type: 'track', query: title }, function(err, data) {
+    console.log('OK, looking up the song "' + title.trim() + '" ...');
+    spotify.search({ type: 'track', query: title.trim() }, function(err, data) {
         if (err) {
             return console.log('Error occurred: ' + err);
         }
-        // console.log(JSON.stringify(data.tracks.items[0], null, 2));
         let result = data.tracks.items[0];
+        // console.log(JSON.stringify(result, null, 2));
         console.log("SONG: " + result.name);
         console.log("ARTIST(S):");
         result.artists.forEach(artist => {
@@ -36,11 +38,31 @@ let spotifyThis = () => {
 }
 
 let movieThis = () => {
-    console.log('OK, looking up your movie: ' + title + '...');
+    console.log('OK, looking up the movie "' + title.trim() + '" ...');
+    let url = "http://www.omdbapi.com/?t=" + title.trim() + "&y=&plot=short&apikey=trilogy&r=json";
+    request(url, function(error, response, body) {
+        if (error) return console.log('error:', error);
+        // console.log('statusCode:', response && response.statusCode);
+        // console.log('body:', JSON.parse(body))
+        let result = JSON.parse(body)
+        console.log("TITLE: " + result.Title);
+        console.log("YEAR: " + result.Year);
+        console.log("IMDB RATING: " + result.Ratings[0].Value);
+        console.log("ROTTEN TOMATOES RATING: " + result.Ratings[1].Value);
+        console.log("COUNTRY: " + result.Country);
+        console.log("LANGUAGE: " + result.Language);
+        console.log("PLOT: " + result.Plot);
+        console.log("ACTORS: " + result.Actors);
+    });
+
 }
 
 let doIt = () => {
     console.log('Reading command from random.txt ...');
+    fs.readFile('./random.txt', 'utf8', (err, data) => {
+        if (err) throw err;
+        console.log(data)
+    });
 }
 
 switch (command) {
@@ -52,6 +74,7 @@ switch (command) {
         spotifyThis();
         break;
     case 'movie-this':
+        if (!title) title = "Mr. Nobody";
         movieThis();
         break;
     case 'do-what-it-says':
