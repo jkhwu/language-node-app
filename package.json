@@ -18,8 +18,18 @@
   },
   "homepage": "https://github.com/jkhwu/language-node-app#readme",
   "dependencies": {
+    "@types/request-promise": "^4.1.41",
+    "deep-extend": "^0.5.0",
     "dotenv": "^5.0.1",
+    "eslint": "^4.19.1",
+    "mocha": "^5.0.5",
+    "nock": "^9.2.3",
     "node-spotify-api": "^1.0.7",
-    "twitter": "^1.7.1"
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2",
+    "rollup": "^0.57.1",
+    "twitter": "^1.7.1",
+    "typescript": "^2.8.1",
+    "uglifyjs": "^2.4.11"
   }
 }
