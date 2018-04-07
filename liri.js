@@ -18,12 +18,25 @@ let myTweets = () => {
 }
 
 let spotifyThis = () => {
-    console.log('OK, looking up your song: ' + title);
-
+    console.log('OK, looking up the song: "' + title + '" ...');
+    spotify.search({ type: 'track', query: title }, function(err, data) {
+        if (err) {
+            return console.log('Error occurred: ' + err);
+        }
+        // console.log(JSON.stringify(data.tracks.items[0], null, 2));
+        let result = data.tracks.items[0];
+        console.log("SONG: " + result.name);
+        console.log("ARTIST(S):");
+        result.artists.forEach(artist => {
+            console.log(artist.name);
+        });
+        console.log("LINK: " + result.external_urls.spotify);
+        console.log("ALBUM: " + result.album.name);
+    });
 }
 
 let movieThis = () => {
-    console.log('OK, looking up your movie: ' + title);
+    console.log('OK, looking up your movie: ' + title + '...');
 }
 
 let doIt = () => {
@@ -35,6 +48,7 @@ switch (command) {
         myTweets();
         break;
     case 'spotify-this-song':
+        if (!title) title = "'The Sign' Ace of Base";
         spotifyThis();
         break;
     case 'movie-this':
