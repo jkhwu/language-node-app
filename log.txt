@@ -1,0 +1,95 @@
+SONG: I Want It That Way 
+LINK: https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6 
+ALBUM: The Hits--Chapter One 
+ARTIST(S):
+Backstreet Boys
+
+testing out the API
+(Fri Apr 06 23:40:59 +0000 2018)
+hello world
+(Fri Apr 06 23:40:48 +0000 2018)
+It's Time For an RSS Revival https://t.co/c978zGQ4Do via @SidebarIO
+(Sun Apr 01 05:26:03 +0000 2018)
+Designed Space - The culture of design studios https://t.co/fHyrjpSQtm via @SidebarIO
+(Sun Apr 01 05:25:57 +0000 2018)
+A UX case study on a top marketplace app https://t.co/ldw6wXpR0E via @SidebarIO
+(Sun Apr 01 05:25:50 +0000 2018)
+Attack Of The Micro Brands https://t.co/FgqmxKaw3h via @SidebarIO
+(Sun Apr 01 05:25:37 +0000 2018)
+Google's Latest Experiment Is Like Reverse Image Search For Color https://t.co/Kctyr88TrC via @SidebarIO
+(Sun Apr 01 05:25:05 +0000 2018)
+
+SONG: Salty Eyes 
+LINK: https://open.spotify.com/track/76xCyKAK3TRZWRQb4WjHc5 
+ALBUM: Decomposer 
+ARTIST(S):
+The Matches
+
+TITLE: Her
+YEAR: 2013
+IMDB RATING: 8.0/10
+ROTTEN TOMATOES RATING: 94%
+COUNTRY: USA
+LANGUAGE: English
+PLOT: In a near future, a lonely writer develops an unlikely relationship with an operating system designed to meet his every need.
+ACTORS: Joaquin Phoenix, Lynn Adrianna, Lisa Renee Pitts, Gabe Gomez
+
+movie-this:
+
+OK, looking up the movie Her ...
+TITLE: Her
+YEAR: 2013
+IMDB RATING: 8.0/10
+ROTTEN TOMATOES RATING: 94%
+COUNTRY: USA
+LANGUAGE: English
+PLOT: In a near future, a lonely writer develops an unlikely relationship with an operating system designed to meet his every need.
+ACTORS: Joaquin Phoenix, Lynn Adrianna, Lisa Renee Pitts, Gabe Gomez
+
+movie-this:
+OK, looking up the movie Her ...
+TITLE: Her
+YEAR: 2013
+IMDB RATING: 8.0/10
+ROTTEN TOMATOES RATING: 94%
+COUNTRY: USA
+LANGUAGE: English
+PLOT: In a near future, a lonely writer develops an unlikely relationship with an operating system designed to meet his every need.
+ACTORS: Joaquin Phoenix, Lynn Adrianna, Lisa Renee Pitts, Gabe Gomez
+
+movie-this:
+OK, looking up the movie Her ...
+TITLE: Her
+YEAR: 2013
+IMDB RATING: 8.0/10
+ROTTEN TOMATOES RATING: 94%
+COUNTRY: USA
+LANGUAGE: English
+PLOT: In a near future, a lonely writer develops an unlikely relationship with an operating system designed to meet his every need.
+ACTORS: Joaquin Phoenix, Lynn Adrianna, Lisa Renee Pitts, Gabe Gomez
+
+spotify-this-song:
+OK, looking up the song gangnam style ...
+SONG: Gangnam Style (강남스타일) 
+LINK: https://open.spotify.com/track/03UrZgTINDqvnUMbbIMhql 
+ALBUM: Gangnam Style (강남스타일) 
+ARTIST(S):
+PSY
+
+my-tweets:
+These are your last 20 tweets:
+testing out the API
+(Fri Apr 06 23:40:59 +0000 2018)
+hello world
+(Fri Apr 06 23:40:48 +0000 2018)
+It's Time For an RSS Revival https://t.co/c978zGQ4Do via @SidebarIO
+(Sun Apr 01 05:26:03 +0000 2018)
+Designed Space - The culture of design studios https://t.co/fHyrjpSQtm via @SidebarIO
+(Sun Apr 01 05:25:57 +0000 2018)
+A UX case study on a top marketplace app https://t.co/ldw6wXpR0E via @SidebarIO
+(Sun Apr 01 05:25:50 +0000 2018)
+Attack Of The Micro Brands https://t.co/FgqmxKaw3h via @SidebarIO
+(Sun Apr 01 05:25:37 +0000 2018)
+Google's Latest Experiment Is Like Reverse Image Search For Color https://t.co/Kctyr88TrC via @SidebarIO
+(Sun Apr 01 05:25:05 +0000 2018)
+
