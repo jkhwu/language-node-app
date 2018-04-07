@@ -1,0 +1,25 @@
+{
+  "name": "language-node-app",
+  "version": "1.0.0",
+  "description": "an exercise using node to request data from APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkhwu/language-node-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkhwu/language-node-app/issues"
+  },
+  "homepage": "https://github.com/jkhwu/language-node-app#readme",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "node-spotify-api": "^1.0.7",
+    "twitter": "^1.7.1"
+  }
+}
